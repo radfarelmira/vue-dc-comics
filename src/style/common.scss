@@ -4,12 +4,10 @@
 
 }
 
-.col{
-    float: left;
+ul{
+    list-style-type: none;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+a{
+    text-decoration: none;
 }

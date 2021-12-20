@@ -54,25 +54,26 @@ export default {
 
 section {
     background-color: $primary_color;
-    color: white;
+    color: $secondary_color;
     text-transform: uppercase;
     font-size: 14px;
+    
     .products{
         padding: 40px 0;
+
         ul{
             display: flex;
             justify-content: space-around;
-            list-style-type: none;
 
             li{
                 display: flex;
                 align-items: center;
+
                 img{
                     width: 40px;
                 }
 
                 a{
-                    text-decoration: none;
                     color: inherit;
                     margin-left: 10px;
                     }
