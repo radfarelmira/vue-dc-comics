@@ -24,6 +24,18 @@
                             <li>
                                 <a href="#">link</a>
                             </li> 
+                            <li>
+                                <a href="#">link</a>
+                            </li>
+                            <li>
+                                <a href="#">link</a>
+                            </li> 
+                            <li>
+                                <a href="#">link</a>
+                            </li>
+                            <li>
+                                <a href="#">link</a>
+                            </li> 
                         </ul>
                     </div>
 
@@ -79,11 +91,21 @@
 
                 <div class="bottom-right">
                     <a href="#">follow us</a>
-                    <img src="../assets/img/footer-facebook.png" alt="facebook">
-                    <img src="../assets/img/footer-twitter.png" alt="twitter">
-                    <img src="../assets/img/footer-youtube.png" alt="youtube">
-                    <img src="../assets/img/footer-pinterest.png" alt="pinterest">
-                    <img src="../assets/img/footer-periscope.png" alt="periscope">
+                    <a href="#">
+                        <img src="../assets/img/footer-facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-twitter.png" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-youtube.png" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-periscope.png" alt="periscope">
+                    </a>
                 </div>
                 
             </div>
