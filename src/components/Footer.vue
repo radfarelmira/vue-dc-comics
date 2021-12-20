@@ -71,9 +71,21 @@
 
         <div class="bottom">
             <div class="content container">
-                <a class="btn" href="#">
-                sign-up now!
-                </a>
+                <div class="bottom-left">
+                    <a class="btn" href="#">
+                    sign-up now!
+                    </a>
+                </div>
+
+                <div class="bottom-right">
+                    <a href="#">follow us</a>
+                    <img src="../assets/img/footer-facebook.png" alt="facebook">
+                    <img src="../assets/img/footer-twitter.png" alt="twitter">
+                    <img src="../assets/img/footer-youtube.png" alt="youtube">
+                    <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                    <img src="../assets/img/footer-periscope.png" alt="periscope">
+                </div>
+                
             </div>
         </div>
     </footer>
@@ -122,14 +134,37 @@ export default {
 
     .bottom{
         background-color: #303030;
-        padding: 50px 0;
+        padding: 30px 0;
         text-transform: uppercase;
 
-        .btn{
-            padding: 15px 10px;
-            color: $secondary_color;
-            border: 2px solid $primary_color;
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .bottom-left{
+                .btn{
+                padding: 15px 10px;
+                color: $secondary_color;
+                border: 2px solid $primary_color;
+                }
+            }
+
+            .bottom-right{
+                display: flex;
+                align-items: center;
+
+                img{
+                    margin-left: 20px;
+                }
+
+                a{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $primary_color;
+                }
+            }
         }
+        
     }
  }
 

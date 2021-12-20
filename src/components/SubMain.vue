@@ -30,12 +30,12 @@ export default {
                 {
                     text: 'subscription',
                     url: '#',
-                    imgSrc: require('../assets/img/buy-comics-shop-locator.png')
+                    imgSrc: require('../assets/img/buy-comics-subscriptions.png')
                 },
                 {
                     text: 'comic shop locator',
                     url: '#',
-                    imgSrc: require('../assets/img/buy-comics-subscriptions.png')
+                    imgSrc: require('../assets/img/buy-comics-shop-locator.png')
                 },
                 {
                     text: 'dc power visa',
