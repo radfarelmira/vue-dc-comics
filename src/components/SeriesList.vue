@@ -1,21 +1,31 @@
 <template>
     <section>
         <div class="container">
-            <a class="btn-blue" href="#">
+            <a class="btn-blue top-btn" href="#">
             current series
             </a>
 
             <div class="series-list">
-                series list
+                <Serie v-for="(serie, index) in series" :key="index" :serieObject="serie"/>
+
+                <a class="btn-blue bottom-btn" href="#">
+                current series
+                </a>
             </div>
+            
             
         </div> 
     </section>
 </template>
 
 <script>
+import Serie from "./Serie.vue" ;
+
 export default {
-    name: "Series",
+    name: "SeriesList",
+     components: {
+       Serie,
+    },
     data: function () {
         return {
             series: [
@@ -110,11 +120,19 @@ section{
         position: relative;
         padding: $section_padding;
 
-        a{
+        .top-btn{
             position: absolute;
             top: -20px;
             left: 0;
+            font-size: 20px;
         }
+
+        .series-list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
     }
     
 }

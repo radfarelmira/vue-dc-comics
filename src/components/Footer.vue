@@ -163,8 +163,8 @@ export default {
 
         .content{
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             .bottom-left{
                 .btn{
                 padding: 15px 10px;
@@ -178,7 +178,7 @@ export default {
                 align-items: center;
 
                 img{
-                    margin-left: 20px;
+                    padding-left: 20px ;
                 }
 
                 a{
