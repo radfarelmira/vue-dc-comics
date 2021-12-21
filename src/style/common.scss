@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .container{
     width: 80%;
     margin: auto;
@@ -10,4 +12,12 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+.btn-blue{
+    background-color: $primary_color;
+    padding:10px 20px;
+    color: $secondary_color;
+    font-weight: bold;
+    display: inline-block;
 }

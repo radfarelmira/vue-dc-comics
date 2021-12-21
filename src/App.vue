@@ -3,9 +3,15 @@
     <Header/>
 
     <main>
-     --> Content goes here 
-    </main>
+      <section class="jumbotron">
+        <img src="./assets/img/jumbotron.jpg" alt="jumbotron">
+      </section>
+
+    <SeriesList/>
+
     <SubMain/>
+    </main>
+    
 
     <Footer/>
   </div>
@@ -15,6 +21,7 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import SubMain from "./components/SubMain.vue";
+import SeriesList from "./components/SeriesList.vue";
 
 export default {
   name: "App",
@@ -22,6 +29,7 @@ export default {
     Header,
     Footer,
     SubMain,
+    SeriesList,
   },
 };
 </script>
@@ -32,10 +40,11 @@ export default {
 @import './style/variables.scss';
 
 main{
-  // TEST
-  height: 100px;
-  background-color: black;
-  color: white;
+  .jumbotron{
+    height: 40vh;
+    overflow: hidden;
+  }
 }
+
 
 </style>

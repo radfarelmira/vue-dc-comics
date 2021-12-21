@@ -123,8 +123,9 @@ export default {
 @import '../style/common.scss';
 @import '../style/variables.scss';
  footer{
-     background-image: url(../assets/img/footer-bg.jpg);
+     
     .top{ 
+        background-image: url(../assets/img/footer-bg.jpg);
         .content{
             background-image: url(../assets/img/dc-logo-bg.png);
             background-repeat: no-repeat;
@@ -133,6 +134,7 @@ export default {
             display: flex;
 
             .links{
+                width: 50%;
                 display: flex;
                 .link{
                     margin-right: 50px;
