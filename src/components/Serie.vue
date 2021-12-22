@@ -18,16 +18,19 @@ export default {
 <style lang="scss" scoped>
 @import '../style/common.scss';
 @import '../style/variables.scss';
+@import '../style/mixin.scss';
 
 .single-serie{
-    width: calc((100% / 6) - 8px);
-    padding: 30px 0;
-    margin: 0 4px;
+    width: calc(100% / 6);
+    padding: 30px 8px;
 
     .single-serie-img{
-        width: 180px;
-        height: 180px;
+        width: 100%;
+        height: 200px;
         overflow: hidden;
+            img{
+                @include image-fit;
+            }
     }
 
     h4{

@@ -1,5 +1,9 @@
 <template>
     <section>
+        <div class="jumbotron">
+        <img src="../assets/img/jumbotron.jpg" alt="jumbotron">
+        </div>
+
         <div class="container">
             <a class="btn-blue top-btn" href="#">
             current series
@@ -110,19 +114,26 @@ export default {
 <style lang="scss" scoped>
 @import '../style/common.scss';
 @import '../style/variables.scss';
+@import '../style/mixin.scss';
 
 section{
     background-color: #1c1c1c;
     text-transform: uppercase;
-    
 
+    .jumbotron{
+    height: 40vh;
+    overflow: hidden;
+        img{
+            @include image-fit;
+        }
+    }
     .container{
-        position: relative;
+        // position: relative;
         padding: $section_padding;
 
         .top-btn{
-            position: absolute;
-            top: -20px;
+            position: relative;
+            top: -50px;
             left: 0;
             font-size: 20px;
         }
@@ -130,6 +141,7 @@ section{
         .series-list{
             display: flex;
             justify-content: center;
+            align-items: flex-start;
             flex-wrap: wrap;
         }
 
